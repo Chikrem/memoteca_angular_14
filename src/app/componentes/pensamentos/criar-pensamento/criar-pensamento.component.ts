@@ -1,3 +1,4 @@
+import { Pensamento } from './../pensamento';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarPensamentoComponent implements OnInit {
 
+  pensamento: Pensamento = {
+    id: 1,
+    conteudo: 'Aprendendo Angular',
+    autoria: 'Dev',
+    modelo: 'modelo1'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  criarPensamento() {
+    alert("Novo pensamento criado!")
+  }
+
+  cancelar() {
+    alert("Ação cancelada!")
   }
 
 }
