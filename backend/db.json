@@ -1,19 +1,19 @@
 {
   "pensamentos": [
     {
-      "id": 1,
+      "id": "1",
       "conteudo": "Que bom que vc veio",
       "autoria": "Nay",
       "modelo": "modelo1"
     },
     {
-      "id": 2,
-      "conteudo": "Estudando Angular",
+      "id": "2",
+      "conteudo": "Estudando Angular 2",
       "autoria": "Dev Alura",
       "modelo": "modelo2"
     },
     {
-      "id": 3,
+      "id": "3",
       "conteudo": "Angular é o melhor",
       "autoria": "Nay",
       "modelo": "modelo3"
