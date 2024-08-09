@@ -34,7 +34,8 @@ export class CriarPensamentoComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       conteudo: ['', Validators.compose([Validators.required, Validators.pattern(/(.|\s)*\S(.|\s)*/), Validators.minLength(3)])], // Validador. Campo Requerido. Evitar espaços em branco. Tamanho mínimo.
       autoria: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
-      modelo: ['modelo1']
+      modelo: ['modelo1'],
+      favorito: [false]
     })
   }
 

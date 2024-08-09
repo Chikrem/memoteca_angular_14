@@ -52,6 +52,15 @@
   width: 262px;
 }
 
+.botao-editar,
+.botao-excluir,
+.botao-favorito {
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 768px) {
   .pensamento-g {
     width: 100%;
