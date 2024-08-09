@@ -14,8 +14,13 @@ export class PensamentoComponent implements OnInit {
     conteudo: '',
     autoria: '',
     modelo: '',
-    favorito: false
+    favorito: false,
+
   }
+
+  @Input() listaFavoritos: Pensamento[] = []
+
+
 
   constructor(private service: PensamentoService) { }
 
@@ -38,8 +43,7 @@ export class PensamentoComponent implements OnInit {
   }
 
   atualizarFavoritos(){
-    this.service.mudarFavorito(this.pensamento).subscribe()
-    console.log(this.pensamento.favorito)
+    this.service.mudarFavorito(this.pensamento).subscribe(() => this.listaFavoritos.splice(this.listaFavoritos.indexOf(this.pensamento), 1))
   }
 
 }
